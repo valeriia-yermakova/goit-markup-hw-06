@@ -170,15 +170,16 @@ button {
     color: #F4F4FD;
 }
 .footer-logo {
+    color: #4D5AE5;
     text-transform: uppercase;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 .logo-color-footer {
-    color: #4D5AE5;
+    color: #f4f4fd;
 }
 .footer-text {
     font-size: 16px;
