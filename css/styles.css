@@ -24,16 +24,16 @@ button {
 /*==========HEADER STYLES==========*/
 
 .page-logo {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: #4D5AE5;
 }
 .logo-color{
-    color: #4D5AE5;
+    color: #2E2F42;
 }
 .menu {
     color: #2E2F42;
@@ -63,9 +63,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.contact-list-item:active, 
-.contact-list-item:hover, 
-.contact-list-item:focus {
+.contact-list-link:active, 
+.contact-list-link:hover, 
+.contact-list-link:focus {
     color: #404BBF;
 }
 
@@ -85,7 +85,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
 }
 .order-service:active, 
@@ -115,11 +115,13 @@ button {
     background-color: #f4f4fd;
 }
 .section-title {
+    text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    color: #2E2F42;
 }
 .team-list-item {
     background-color: #FFFFFF;
@@ -140,14 +142,17 @@ button {
 }
 
 /*==========PORTFOLIO STYLES==========*/
-.portfolio {
+.portfolio-title {
+    text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    color: #2E2F42;
 }
 .portfolio-list-title{
+    color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
