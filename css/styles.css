@@ -6,9 +6,21 @@ body {
     font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
@@ -21,7 +33,40 @@ button {
     background-color: #4D5AE5;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container { 
+    max-width: 1158px;
+    padding-left: 15px;  
+    padding-right: 15px; 
+    margin-left:  auto;
+    margin-right:  auto;
+    }
+
 /*==========HEADER STYLES==========*/
+
+.page-header {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 72px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header-container {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 
 .page-logo {
     font-family: 'Raleway', sans-serif;
@@ -31,6 +76,10 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-left: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 76px;
 }
 .logo-color{
     color: #2E2F42;
@@ -41,12 +90,18 @@ button {
     font-size: 16px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .menu-link {
     font-family: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0;
 }
 
 .menu-link:hover,
@@ -63,6 +118,15 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.contact-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 332px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 .contact-list-link:active, 
 .contact-list-link:hover, 
 .contact-list-link:focus {
@@ -73,13 +137,21 @@ button {
 .hero {
     background-color: #2E2F42;
     text-align: center;
+    padding: 188px 0;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    max-width: 496px;
+    min-width: 169px;
+    text-align: center;
 }
 .order-service {
     font-weight: 500;
@@ -87,6 +159,13 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    text-align: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+
 }
 .order-service:active, 
 .order-service:focus,
@@ -96,24 +175,58 @@ button {
 }
 
 /*==========BENEFITS STYLES==========*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-list {
+    display: flex;
+    margin: 120px 156px;
+    gap: 24px;
+    width: 1128px;
+    height: 104px;
+}
+
+.benefits-list-item {
+    width: calc((100% - 72px) /4);
+}
+
 .benefits-list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .benefits-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
 }
 
 /*==========TEAM STYLES==========*/
 .team {
     background-color: #f4f4fd;
+    width: 1440px;
+    height: 732px;
+    padding: 120px 0;
 }
+
+.team-container {
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
 .section-title {
     text-transform: capitalize;
     font-weight: 700;
@@ -122,26 +235,52 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 72px;
 }
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-item {
     background-color: #FFFFFF;
     text-align: center;
-
+    width: calc((100% - 72px) /4);
+    border-radius: 0px 0px 4px 4px;
 }
+
+.team-list-container {
+    padding: 32px 0;
+}
+
 .team-list-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /*==========PORTFOLIO STYLES==========*/
+.portfolio {
+    padding: 120px 0;
+    width: 1440px;
+}
+
+.portfolio-container {
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
 .portfolio-title {
     text-transform: capitalize;
     font-weight: 700;
@@ -150,13 +289,28 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 72px;
 }
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) /3);
+}
+
 .portfolio-list-title{
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
 }
 .portfolio-list-text {
     font-size: 16px;
@@ -164,10 +318,17 @@ button {
     letter-spacing: 0.02em;
 }
 
+.portfolio-list-container {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
 /*==========FOOTER STYLES==========*/
 .page-footer {
     background-color: #2E2F42;
     color: #F4F4FD;
+    width: 1440px;
 }
 .footer-logo {
     color: #4D5AE5;
@@ -177,6 +338,8 @@ button {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-color-footer {
     color: #f4f4fd;
