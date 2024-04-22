@@ -189,6 +189,10 @@ img {
     overflow: hidden;
 }
 
+.benefits {
+    padding: 120px 0;
+}
+
 .benefits-list {
     display: flex;
     gap: 24px;
@@ -214,9 +218,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-.benefits-container {
-    padding: 120px 0;
-}
+
 /*==========TEAM STYLES==========*/
 .team {
     background-color: #f4f4fd;
