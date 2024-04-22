@@ -93,7 +93,6 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .menu-link {
@@ -103,6 +102,7 @@ img {
     margin-top: 24px;
     margin-bottom: 24px;
     margin-left: 0;
+    padding: 24px 0;
 }
 
 .menu-link:hover,
