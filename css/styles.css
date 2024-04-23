@@ -13,13 +13,15 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul,
 ol {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
 }
 
@@ -48,24 +50,22 @@ img {
 
 /*==========HEADER STYLES==========*/
 
-.page-header {
+.page-header-container {
     display: flex;
+    justify-content: space-between;
+}
+
+.page-header {
     align-items: center;
-    width: 1440px;
-    height: 72px;
     border-bottom: 1px solid #E7E9FC;
 }
 
-.page-header-container {
-    display: flex;
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 .page-nav {
     display: flex;
     align-items: center;
+    
 }
 
 .page-logo {
@@ -76,9 +76,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    margin-left: 0;
-    margin-top: 24px;
-    margin-bottom: 24px;
     margin-right: 76px;
 }
 .logo-color{
@@ -92,17 +89,16 @@ img {
     letter-spacing: 0.03em;
     display: flex;
     align-items: center;
-    gap: 40px;
+    column-gap: 40px;
 }
 
 .menu-link {
+    display: block;
     font-family: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: 0;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link:hover,
