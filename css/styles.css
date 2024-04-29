@@ -139,8 +139,14 @@ img {
 }
 
 .hero {
-    background-color: #2E2F42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 188px 0;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-title {
@@ -220,7 +226,41 @@ img {
     letter-spacing: 0.02em;
 }
 
+.benefits-item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    background-color: #F4F4FD;
+    margin-bottom: 8px;
+}
+
 /*==========TEAM STYLES==========*/
+
+.icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.team-icon {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.team-list-icon {
+    display: inline-block;
+    
+}
 
 .team {
     background-color: #f4f4fd;
