@@ -99,7 +99,18 @@ img {
     position: relative;
 }
 
-
+.menu-link-studio {
+    display: block;
+    font-family: inherit;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    position: relative;
+}
 
 .menu-link:hover,
 .menu-link:focus, 
@@ -109,7 +120,15 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover:after {
+.menu-link-studio:hover,
+.menu-link-studio:focus, 
+.menu-link-studio:active {
+    font-family: inherit;
+    color: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-studio:hover:after {
     content: '';
     width: 100%;
     position: absolute;
