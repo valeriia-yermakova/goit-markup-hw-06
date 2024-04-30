@@ -128,7 +128,7 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link-studio:hover:after {
+.menu-link-studio:active:after {
     content: '';
     width: 100%;
     position: absolute;
@@ -183,6 +183,7 @@ img {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .main-title {
@@ -209,6 +210,7 @@ img {
     border: none;
     border-radius: 4px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service:active, 
@@ -324,6 +326,7 @@ img {
     text-align: center;
     width: calc((100% - 72px) /4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-container {
