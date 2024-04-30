@@ -483,3 +483,49 @@ img {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+.page-footer-container {
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
+}
+
+.social-icon-list {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon-item {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: #31D0AA;
+}
+
+.social-icon {
+    fill: #F4F4FD;
+
+}
+
+.icon-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
