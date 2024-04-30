@@ -490,6 +490,10 @@ img {
     margin-right: 120px;
 }
 
+.footer-text-container {
+    margin-right: 120px;
+}
+
 .social-icon-list {
     display: flex;
     gap: 16px;
