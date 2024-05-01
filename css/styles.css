@@ -314,6 +314,12 @@ img {
     margin-bottom: 32px;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;  
+}
+
 .team-list-icon {
     fill: #F4F4FD;
 }
