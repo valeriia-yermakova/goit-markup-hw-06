@@ -369,7 +369,6 @@ img {
 }
 
 .list-title-container {
-    margin-bottom: 8px;
     padding: 32px 0;
 }
 
@@ -487,7 +486,6 @@ img {
 .page-footer-container {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
 }
 
 .footer-text-container {
