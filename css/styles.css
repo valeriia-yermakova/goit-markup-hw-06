@@ -530,6 +530,10 @@ img {
 
 }
 
+.footer-icon {
+    margin-right: 80px;
+}
+
 .icon-text {
     font-weight: 500;
     font-size: 16px;
