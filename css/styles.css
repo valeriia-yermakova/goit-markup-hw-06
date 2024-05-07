@@ -763,6 +763,7 @@ img {
 
 .privacy-policy {
     color: #4D5AE5;
+    text-decoration: underline;
 }
 
 .send-button {
@@ -778,4 +779,6 @@ img {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     border-radius: 4px;
+    font-weight: 500;
+    margin: 0 auto;
 }
