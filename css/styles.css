@@ -737,7 +737,7 @@ img {
 }
 
 .checkbox-label {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
@@ -753,4 +753,29 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+.checkbox-input:checked + .checkbox-label .own-checkbox {
+    background-color: #404BBF;
+    fill: #F4F4FD;
+    border: none;
+}
+
+.privacy-policy {
+    color: #4D5AE5;
+}
+
+.send-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 4px;
 }
