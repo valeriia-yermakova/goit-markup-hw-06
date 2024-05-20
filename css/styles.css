@@ -77,7 +77,7 @@ img {
     }
 }
 
-@media screen and (min-width:1168px) {
+@media screen and (min-width:1158px) {
     .container {
         max-width: 1158px;
         padding-left: 15px;
@@ -444,9 +444,11 @@ img {
     .hero-container {
         max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    @media screen and (max-width:1199px) and (min-resolution: 2dppx), (min-resolution: 192dpi), (webkit-min-device-pixel-ratio: 2) {
+    @media screen and (max-width:1157px) and (min-resolution: 2dppx), (min-resolution: 192dpi), (webkit-min-device-pixel-ratio: 2) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet@2x.jpg);
         }
@@ -466,10 +468,12 @@ img {
     
 }
 
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1158px) {
     .hero-container {
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), (webkit-min-device-pixel-ratio: 2) {
@@ -504,15 +508,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: center;
-}
-.benefits-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .benefits-list-title {
@@ -520,6 +515,7 @@ img {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2E2F42;
     margin-bottom: 8px;
 }
@@ -535,43 +531,154 @@ img {
 @media screen and (min-width: 768px) {
 
     .benefits-container {
-        max-width: 736px;
+        max-width: 768px;
     }
     
     .benefits-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
         gap: 72px 24px;
-        text-align: start;
     }
 
     .benefits-list-item {
-        display: flex;
-        flex-basis: calc((100% - 24px) /2);
-        align-items: flex-start;
-        justify-content: center;
         max-width: 356px;
     }
 
 
     
     .benefits-list-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-        margin-bottom: 8px;
+        text-align: start;
     }
-    
-    .benefits-list-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+}
+
+@media screen and (min-width:1158px) {
+
+    .benefits-container {
+        max-width: 1158px;
     }
+
+    .benefits {
+        padding: 120px 0;
+    }
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+.benefits-list-item {
+    width: calc((100% - 24px) /4);
+}
+
+.benefits-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.benefits-list-text {
+    font-weight: 400;
+}
+
+.benefits-item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    background-color: #F4F4FD;
+    margin-bottom: 8px;
+}
+}
+
+/*------------ TEAM STYLES ----------*/
+
+.team {
+    display: flex;
+    background-color: #F4F4FD;
+    padding: 96px 0;
+}
+
+.section-title {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    max-width: 264px;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.list-title-container {
+    padding: 32px 0;
+}
+
+.team-list-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #434455;
+}
+
+.icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.item-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-icon-link:hover,
+.item-icon-link:focus {
+    background-color: #404BBF;
+}
+
+.team-list-icon {
+    fill: #F4F4FD;
 }
